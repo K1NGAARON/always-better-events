@@ -1,0 +1,163 @@
+.wrapper.cards .card.last-card {
+    flex: 0 1 45%;
+    justify-self: flex-start;
+}
+
+.wrapper.cards .related-card .card-image {
+    overflow: unset;
+}
+
+.wrapper.cards .card.related-card .card-image {
+    flex: 1 0;
+    overflow: hidden;
+}
+
+.wrapper.cards.related-cards {
+    width: 70%;
+}
+
+.wrapper.cards.related-cards .card {
+    flex: 1 0;
+    height: unset;
+}
+
+.btn.load-more {
+    margin-top: 40px;
+}
+
+.wrapper.cards.related-cards .card .card-content {
+    bottom: 20px;
+    left: 20px;
+    flex: 1 0;
+}
+
+.wrapper.cards.related-cards .card .card-content .tag {
+    font-size: 14px;
+}
+
+.wrapper.cards.related-cards .card .card-content h5 {
+    font-size: 18px;
+}
+
+.wrapper.cards.related-cards .card .btn {
+    font-size: 12px;
+    margin-top: auto;
+    margin-left: 20px;
+}
+
+.intro h1 {
+    font-size: 54px;
+    width: 65%;
+}
+
+.intro .tag {
+    color: var(--light-grey);
+}
+
+.intro .row {
+    padding-top: 60px;
+}
+
+.intro .social-share {
+    display: flex;
+    gap: 10px;
+}
+
+.intro .social-share a {
+    font-size: 30px;
+    color: #D3D3D3;
+    transition: var(--transition);
+}
+
+.intro .social-share a:hover {
+    cursor: pointer;
+    color: var(--primary);
+    transition: var(--transition); 
+}
+
+.content.section .row,
+.intro.section .row {
+    max-width: unset;
+    width: 70%;
+}
+
+.content .container {
+    position: relative;
+    width: 100%;
+}
+
+.content .container,
+.content .container img,
+.content .container .overlay {
+    height: 40vh;
+    border-radius: var(--borderRadius);
+}
+
+.content .container .overlay {
+    background: var(--black);
+}
+
+.content .container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.content .container .container-content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 10;
+}
+
+.content .container .container-content h5,
+.content .container .container-content p {
+    color: var(--white);
+}
+
+.content .container .container-content h5 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.content .podcast-wrapper {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.content .podcast-wrapper iframe {
+    width: 100%;
+    height: 30vh;
+}
+
+.content .timestamp {
+    display: flex;
+    gap: 5px;
+}
+
+.content .mt-60 {
+    margin-top: 60px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: var(--borderRadius);
+}
+
+.cta h5 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cta p {
+    text-align: center;
+    font-size: 16px;
+}
