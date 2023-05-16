@@ -198,7 +198,7 @@ function archiveContent(e) {
             `;
     
         }).join('');
-    
+        
         target.innerHTML = cards;
     }
 };
@@ -208,5 +208,5 @@ $(document).ready(function() {
     sortPosts();
     upComingEvents();
     highlightedContent();
-    archiveContent();
+    // archiveContent();
 });
