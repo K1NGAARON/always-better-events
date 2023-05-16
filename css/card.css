@@ -143,3 +143,19 @@
     font-size: 14px;
     margin-top: auto;
 }
+
+.upcoming-events .cards .card {
+    flex: 1 0;
+    box-shadow: var(--boxShadow);
+}
+
+.upcoming-events .cards .card .card-image,
+.upcoming-events .cards .card .card-image img,
+.upcoming-events .cards .card .card-image .overlay {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.upcoming-events .cards .card .btn {
+    margin-top: auto;
+}

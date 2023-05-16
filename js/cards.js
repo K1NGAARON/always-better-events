@@ -106,6 +106,39 @@ function sortPosts() {
 };
 
 
+function upComingEvents(e) {
+    const target = document.querySelector('#upcomingEvents');
+
+    if (target) {
+        const cards = content.slice(0, upcomingToShow).map(content => {
+            const tagWithSpaces = content.tag.replace(/-/g, ' ');
+
+            return `
+                <div class="card ${content.date} ${content.category} ${content.tag}">
+                    <div class="card-image">
+                        <img src="${content.img}" alt="${content.title}">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <p class="tag">
+                            ${tagWithSpaces}
+                        </p>
+                        <h5>
+                            ${content.title}
+                        </h5>
+                        <a href="/posts/${content.link}" class="btn ghost no-border">
+                            Lees meer <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        target.innerHTML = cards;
+    }
+}
+
+
 function highlightedContent(e) {
     const target = document.querySelector('#content');
 
@@ -173,6 +206,7 @@ function archiveContent(e) {
 
 $(document).ready(function() {
     sortPosts();
+    upComingEvents();
     highlightedContent();
     archiveContent();
 });
