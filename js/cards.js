@@ -97,6 +97,7 @@ const content = [
     },
 ];
 
+const upcomingToShow = 4
 const highlightedToShow = 6
 const archivedToShow = 8
 
